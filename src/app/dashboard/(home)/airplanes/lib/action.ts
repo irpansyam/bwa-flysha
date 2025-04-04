@@ -59,7 +59,7 @@ export async function saveAirplane(
                 image: uploadedFile as string
             }
         })
-        console.log(data);
+        
         
     } catch (error) {
 

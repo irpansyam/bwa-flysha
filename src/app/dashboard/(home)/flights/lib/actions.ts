@@ -11,7 +11,6 @@ export async function saveFlight(
     prevState: unknown,
     formData: FormData
 ): Promise<ActionResult> {
-    console.log(formData.get("planeId"));
 
     const departureDate = new Date(formData.get('departureDate') as string)
     const arrivalDate = new Date(formData.get('arrivalDate') as string)

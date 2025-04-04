@@ -14,7 +14,6 @@ export interface ActionResult {
 }
 
 export async function handleSignIn(prevState: any, formData: FormData): Promise<ActionResult> {
-    console.log(formData.get('email'))
     const values = formSchema.safeParse({
         email: formData.get('email'),
         password: formData.get('password')

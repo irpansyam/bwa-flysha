@@ -35,9 +35,7 @@ export default function FormFlight({ airplanes, defaultValues = null, type }: Fo
     const updateFlightWithId = (_state: ActionResult, formData: FormData) => updateFlight(null, defaultValues ? defaultValues.id : null, formData)
 
     const [state, formAction] = useFormState(type === 'ADD' ? saveFlight : updateFlightWithId, initialFormState)
-
-    console.log(defaultValues);
-    
+   
     
     return (
         <form action={formAction} className='px-2 space-y-6'>
