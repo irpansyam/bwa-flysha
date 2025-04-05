@@ -1,5 +1,5 @@
 "use client"
-import type { TypeSeat } from '@prisma/client'
+import { TypeSeat } from '@prisma/client'
 import React, { type ChangeEvent, useContext } from 'react'
 import { type FContext, FilterActionKind, FlightContext } from '../providers/flight-provider'
 

@@ -1,6 +1,6 @@
 "use client"
 
-import type { Airplane } from '@prisma/client';
+import { Airplane } from '@prisma/client';
 import React, { type ChangeEvent, useContext, type FC } from 'react'
 import { type FContext, FilterActionKind, FlightContext } from '../providers/flight-provider';
 
