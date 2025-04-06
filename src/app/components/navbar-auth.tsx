@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
+
 import { getUser } from "@/lib/auth";
-import { LogOut } from "lucide-react";
 import Link from "next/link";
-import { logout } from "../(home)/lib/actions";
 import React from "react";
+import LogoutButton from "./logout-button";
 
 export default async function NavbarAuth() {
 
@@ -17,16 +16,7 @@ export default async function NavbarAuth() {
                 <Link href="/sign-in" className="font-bold text-flysha-black bg-flysha-light-purple rounded-full p-[12px_30px] transition-all duration-300 hover:shadow-[0_10px_20px_0_#B88DFF]">Sign In</Link>
             )}
 
-            {session && user.role === "CUSTOMER" && (
-                <form onSubmit={async (e) => { 
-                    e.preventDefault(); 
-                    await logout(); 
-                }}>
-                    <Button variant="destructive" className="rounded-full">
-                        <LogOut className="w-4 h-4"/>
-                    </Button>
-                </form>
-            )}
+            {session && user.role === "CUSTOMER" && <LogoutButton/>}
         </div>
     )
     
