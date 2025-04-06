@@ -19,7 +19,7 @@ export default function LoadingTicketCard() {
                     <Skeleton className='w-[60px] h-5' />
                     <Skeleton className='w-[90px] h-5' />
                 </div>
-                <img src="../assets/images/icons/plane-dotted.svg" alt="icon" />
+                <img src="/assets/images/icons/plane-dotted.svg" alt="icon" />
                 <div className="flex flex-col gap-[2px] text-center">
                     <Skeleton className='w-[60px] h-5' />
                     <Skeleton className='w-[90px] h-5' />
